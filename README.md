@@ -37,7 +37,7 @@ Program.cs — Application entry point
 
 ## ✅ Current Features
 	| Feature                                                                       | Status                  |
-| ----------------------------------------------------------------------------- | ----------------------- |
+| ---| --- |
 | Machine CRUD (Add / Update / Delete / List)                                   | ✅ Completed             |
 | SQLite local storage                                                          | ✅ Completed             |
 | WinForms GUI                                                                  | ✅ Completed             |
