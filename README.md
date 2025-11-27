@@ -36,8 +36,8 @@ Program.cs — Application entry point
 	-The SQLite database and tables will be created automatically.
 
 ## ✅ Current Features
-	| Feature                                                                       | Status                  |
-| ---| --- |
+| Feature                                                                       | Status                  |
+| ----------------------------------------------------------------------------- | ----------------------- |
 | Machine CRUD (Add / Update / Delete / List)                                   | ✅ Completed             |
 | SQLite local storage                                                          | ✅ Completed             |
 | WinForms GUI                                                                  | ✅ Completed             |
