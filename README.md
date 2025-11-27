@@ -1,87 +1,75 @@
-﻿📌 Hartek Maintenance App
+﻿# Hartek Maintenance App 🛠️
 
-This is a Windows Forms application developed for managing machine maintenance operations in a factory environment.
-It supports:
+**HartekMaintenanceApp** is a simple maintenance & equipment tracking application built with **C# WinForms** and **SQLite**.
 
-✔ Machine-based maintenance tracking
+## 🚀 About the Project
 
-✔ Daily–weekly–monthly inspection management
+This application allows users to:
 
-✔ SQL database integration
+- Register machines (Name, Last Maintenance Date, Notes)  
+- Create and manage maintenance records (Type, Date, Notes)  
+- Perform full CRUD operations (Add, Update, Delete, List)  
+- Store data locally using **SQLite**  
+- Use a clean and functional Windows Forms UI  
 
-✔ User roles (Admin / Operator)
+It is designed for small or medium-sized workshops to easily track daily machine maintenance activities.
 
-✔ Real maintenance records with date–user–machine info
+## 📂 Project Structure (Recommended)
 
-🚀 Technologies Used
+/HartekMaintenanceApp
+/Models — Data models (Machine, Maintenance, etc.)
+/Data — Database access layer (DatabaseHelper, Repository)
+/Services — Business logic classes
+/UI — Windows Forms (MainForm + Designer)
+Program.cs — Application entry point
 
-C# (.NET Framework / WinForms)
 
-SQL Server
+## 🛠️ Setup & Installation
 
-ADO.NET
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/orenliEkrem/HartekMaintenanceApp.git
+2. Open the project in Visual Studio
+3. Install required NuGet package:
+	-System.Data.SQLite
+4. Run the application
+	-The SQLite database and tables will be created automatically.
 
-Object-Oriented Programming
+## ✅ Current Features
+	| Feature                                                                       | Status                  |
+| ----------------------------------------------------------------------------- | ----------------------- |
+| Machine CRUD (Add / Update / Delete / List)                                   | ✅ Completed             |
+| SQLite local storage                                                          | ✅ Completed             |
+| WinForms GUI                                                                  | ✅ Completed             |
+| Maintenance types (inspection, repair, replacement, lubrication, calibration) | ⚠ Partially implemented |
 
-Git & GitHub
+## 📈 Future Improvements / Roadmap
 
-🔧 Features
+	-Separate Repository & Service layers (UI → Logic → Data)
 
-Add, remove, and update maintenance items
+	-Improved error handling and input validation
 
-Select machine from ComboBox
+	-Unit tests and cleaner architecture
 
-Define maintenance types (Inspection, Replik, Replacement, Lubrication, Calibration)
+	-Support for multiple databases (SQLite, PostgreSQL, etc.)
 
-Store and load data from SQL Server
+	-REST API + Web UI (future expansion)
 
-Save notes for each maintenance record
+	-Reporting (Excel, PDF), maintenance planning, reminders
 
-GridView for displaying all maintenance items
+	-Export / Import features
 
-📦 Database Structure
+## 🤝 Contributing
 
-Table: MaintenanceItems
+Contributions are welcome!
+Please read the CONTRIBUTING.md before opening a pull request.
 
-Column	Type	Description
-Id	int	Primary Key
-MachineName	nvarchar(100)	Machine selected from ComboBox
-MaintenanceType	nvarchar(50)	Inspection / Replik / Replacement / Lubrication / Calibration
-Description	nvarchar(MAX)	Maintenance details
-Notes	nvarchar(MAX)	Operator/Admin notes
-CreatedAt	datetime	Record timestamp
-🖼️ Screenshots (Eklenecek)
+## 📄 License
 
-You can add screenshots later.
+This project is licensed under the MIT License — see the LICENSE file for details.
 
-📈 Future Improvements
+## 👤 Developer
 
-User login system
-
-Role-based permissions
-
-Report export (Excel / PDF)
-
-QR code machine scanning
-
-Cloud database integration
-
-Multi-language support
-
-🔧 How to Run the Project
-
-Clone the repository
-
-Open solution in Visual Studio
-
-Update SQL connection string
-
-Run DB script
-
-Run the application
-
-📬 Author
-
-Ekrem Örenli
+**Ekrem Örenli**
 Factory Manager / Industrial Engineer
 Learning C#, SQL and building real-life applications
